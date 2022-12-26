@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 2rem;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: visible;
+    padding: 8px;
+    border-color: rgba(0,0,0,.125);
+    border-radius: 4px;
+}
+
+.notes {
+}
+
+.notes__container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 1619px) {
+    .notes__container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .notes__container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media screen and (max-width: 1289px) {
+    .notes__container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1119px) {
+    .notes__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 819px) {
+    .notes__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .notes__container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.notes__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.sticker {
+    border-radius: 4px;
+    padding: .5rem .5rem 1rem .5rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.sticker button {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
+    color: #26589F;
+    font-family: 'PT Sans Narrow',sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.42rem;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-indent: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sticker button:hover {
+    cursor: pointer;
+}
+
+.create-note {
+    padding: .5rem 1rem;
+    height: 40px;
+    width: 140px;
+    color: white;
+    background-color: #109CF1;
+    border-color: #109CF1;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.create-note:hover{
+    cursor: pointer;
+}
